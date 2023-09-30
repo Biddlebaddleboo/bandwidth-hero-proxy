@@ -5,7 +5,7 @@ function compress(input, webp, grayscale, quality, originSize) {
 
 	return sharp(input)
 		.grayscale(grayscale)
-		.toFormat('webp', {
+		.toFormat('avif', {
 			quality: quality,
 			progressive: true,
 			optimizeScans: true
