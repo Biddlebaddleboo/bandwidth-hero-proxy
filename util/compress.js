@@ -10,7 +10,7 @@ function compress(input, webp, grayscale, quality, originSize) {
 			quality: quality,
 			progressive: true,
 			optimizeScans: true,
-			effort: 6,
+			effort: 9,
 			chromaSubsampling: '4:2:0'
 		})
 		.toBuffer({resolveWithObject: true})
