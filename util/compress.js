@@ -9,7 +9,8 @@ function compress(input, webp, grayscale, quality, originSize) {
 		.toFormat('avif', {
 			quality: quality,
 			progressive: true,
-			optimizeScans: true
+			optimizeScans: true,
+			effort: 6
 		})
 		.toBuffer({resolveWithObject: true})
 		.then(({data: output,info}) => {	// this way we can also get the info about output image, like height, width
