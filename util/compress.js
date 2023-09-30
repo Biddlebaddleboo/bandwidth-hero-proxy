@@ -2,7 +2,7 @@ const sharp = require("sharp");
 
 function compress(input, webp, grayscale, quality, originSize) {
 	#const format = webp ? "webp" : "jpeg";
-	const format = "avif"
+	const format = "avif";
 
 	return sharp(input)
 		.grayscale(grayscale)
