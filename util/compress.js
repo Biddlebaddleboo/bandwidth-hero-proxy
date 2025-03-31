@@ -6,7 +6,7 @@ function compress(input, webp, grayscale, quality, originSize) {
 
 	return sharp(input)
 		.grayscale(grayscale)
-		.pipelineColourspace('rgb16')
+		.toColourspace('rgb16')
 		.toFormat('avif', {
 			quality: quality-19,
 			progressive: true,
